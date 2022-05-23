@@ -8,7 +8,7 @@
 <br>
 
 <h4>Add existing Contestant</h4>
-<%= form_with url: '/projects', method: :post, local: true do |f| %>
+<%= form_with url: "/project_contestants?project_id=#{@project.id}", method: :post, local: true do |f| %>
   <%= f.label :id %>
   <%= f.number_field :id %>
 
