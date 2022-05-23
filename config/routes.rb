@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get '/contestants', to: 'contestants#index'
   get '/challenges', to: 'projects#index'
 
-  post '/projects', to: 'projects#create'
+  # post '/projects', to: 'projects#create'
+  post '/project_contestants', to: 'project_contestants#create'
   get '/projects/:id', to: 'projects#show'
 
 end
